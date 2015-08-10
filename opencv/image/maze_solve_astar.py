@@ -115,7 +115,6 @@ def maze_solve(im, (x1,y1), (x2,y2), th, n):
             return path/rate
 
 def main():
-    scale = 0.1
     p1,p2 = (45, 13),(95, 13)                         # スタートとゴール座標
     im = cv2.imread("map.jpg")                          # 地図画像の取得
     gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)         # グレースケール変換
