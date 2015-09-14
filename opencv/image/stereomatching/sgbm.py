@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import cv2
-import pylab as plt
-
 
 def main():
     # 左右画像をグレースケールで取得
