@@ -2,7 +2,7 @@
 import cv2
 
 def main():
-    im = cv2.imread("test.jpg",0)               # 画像を読み込み
+    im = cv2.imread("test.jpg")               # 画像を読み込み
     im = cv2.cvtColor(im, cv2.COLOR_RGB2HSV)   # RGB画像をHSV色空間に変換
     cv2.imshow("Show",im)                       # ウィンドウの表示
     cv2.waitKey(0)
