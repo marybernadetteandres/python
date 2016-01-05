@@ -11,7 +11,7 @@ def main():
     gray = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
     # ラベリング処理
     n, label = cv2.connectedComponents(gray)
-    # ラベルの個数分だけ色を用意
+    # ラベルの個数nだけ色を用意
     rgbs = np.random.randint(0,255,(n+1,3))
 
     # ラベル付けした各マスクを色付け
