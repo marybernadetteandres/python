@@ -17,10 +17,10 @@ def main():
     center = np.delete(label[3], 0, 0)
     # ラベルの個数nだけ色を用意
     print u"ブロブの個数:", n
-    print u"各ブロブを囲む矩形領域の左上x座標", data[:,0]
-    print u"各ブロブを囲む矩形領域の左上y座標", data[:,1]
-    print u"各ブロブを囲む矩形領域の幅", data[:,2]
-    print u"各ブロブを囲む矩形領域の高さ", data[:,3]
+    print u"各ブロブの外接矩形の左上x座標", data[:,0]
+    print u"各ブロブの外接矩形の左上y座標", data[:,1]
+    print u"各ブロブの外接矩形の幅", data[:,2]
+    print u"各ブロブの外接矩形の高さ", data[:,3]
     print u"各ブロブの面積", data[:,4]
     print u"各ブロブの中心座標:\n",center
 
